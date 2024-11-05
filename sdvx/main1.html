@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta http-equiv="Content-Language" content="zh-tw">
+<title>心情留言板</title>
+</head>
+
+<body bgcolor="#9BBBEC" link="#FFFFFF" vlink="#205780" alink="#FFFFB9">
+<center>
+<form action=gb.php method=post>
+<input type=hidden name=id value="<!-GuestBookID>">
+<input type=hidden name=function value=ins>
+
+<table width="100%" border="3" cellspacing="0" cellpadding="0" bgcolor="#B8C7FA" >
+<tr>
+<td colspan="4" height="29" bgcolor="#688DE3" align="center" >
+<font color="#FFFFFF" size="3">心情留言板</font>
+</td>
+</tr>
+<tr>
+<td bgcolor="#205780" align="center" width="1%" >
+<font size="2" color="#205780">-</font>
+</td >
+<td bgcolor="#205780" align="center" width="7%" >
+<font size="2" color="#FFFFFF">時間</font>
+</td>
+<td bgcolor="#205780" width="12%" align="center">
+<font size="2" color="#FFFFFF">留言人</font>
+</td>
+<td bgcolor="#205780" width="80%" align="center">
+<font size="2" color="#FFFFFF">留言</font>
+</td>
+</tr>
+
+<!-GuestBookRep>
+<tr>
+<td bgcolor="#688DE3" width="1%">
+<font size="1" face="Arial" color="#FFFFFF">
+<!-GuestBookCount>
+</font>
+</td>
+<td bgcolor="#B3C6FF" width="7%" nowrap>
+<font size="1" face="Arial" color="#2C77AF">
+<!-GuestBookTrf-mon2>/<!-GuestBookTrf-mday2> <!-GuestBookTrf-hours2>:<!-GuestBookTrf-minutes2>
+</font>
+</td>
+<td bgcolor="#688DE3" width="12%">
+<font size="2" color="#FFFFFF">
+<!-GuestBookTrf01>
+</font>
+</td>
+<td width="80%" bgcolor="#B5D1FD">
+<font size="2" color="#205780">
+<!-GuestBookTrf04>
+</font>
+</td>
+</tr>
+<!-GuestBookRepEnd>
+<tr>
+<td bgcolor="#1E6DAE">
+<font color="#1E6DAE">-</font>
+</td>
+<td bgcolor="#1E6DAE" colspan="2" align="center">
+<font size="2" color="#B3C6FF">姓名</font>
+<font size="2"  color="#04238C">
+<input type="text" name=p01 value="" size="8" style="background-color: rgb(179,198,255)">
+</font>
+</td>
+<td bgcolor="#1E6DAE" width="100%">
+<font size="2" color="#B3C6FF">留言</font>
+<font size="2" color="#04238C">
+<input type="text" name=p04 size="50" style="background-color: rgb(179,198,255)">
+<input type="submit" value="傳送"  style="background-color: rgb(164,187,255)">
+</font>
+</td>
+</tr>
+</table>
+</form>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" bgcolor="#688DE3" align="center">
+<font size="2" color="#FFFFFF">
+<!-GuestBookPagePStart>
+<a href="<!-GuestBookPageP>">[較新的留言]</a>
+<!-GuestBookPagePEnd> <!-GuestBookPageNStart> 
+<a href="<!-GuestBookPageN>">[較早的留言]</a>
+<!-GuestBookPageNEnd>
+</font>
+</td>
+</tr>
+<tr>
+<td>
+<font size="2" color="#8080C0">
+目前有 <!-GuestBookItems> 則留言　　頁碼:<!-GuestBookPage> / <!-GuestBookTotalPage>
+</font>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html
